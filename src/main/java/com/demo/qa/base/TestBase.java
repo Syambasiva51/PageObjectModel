@@ -16,6 +16,7 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	
 	public TestBase(){
 		try {
 			prop = new Properties();
@@ -44,9 +45,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("URL"));
 		
 	}
-	
-
 }
