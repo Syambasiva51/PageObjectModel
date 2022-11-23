@@ -1,9 +1,16 @@
 package com.demo.qa.util;
 
-public class TestUtil {
+import org.openqa.selenium.By;
+
+import com.demo.qa.base.TestBase;
+
+public class TestUtil extends TestBase{
 
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
+	public void switchToFrame() {
+		driver.switchTo().frame(0);
+	}
 
 }

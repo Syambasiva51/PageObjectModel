@@ -15,7 +15,7 @@ public class LoginPage extends TestBase {
 	@FindBy(id="password")
 	WebElement password;
 	
-	@FindBy(id="login")
+	@FindBy(xpath="//div[@class='mt-2 buttonWrap row']/div/button[@id='login']")
 	WebElement loginBtn;
 	
 	

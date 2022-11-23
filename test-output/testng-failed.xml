@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.demo.qa.testcases.ProfilePagetest">
+      <class name="com.demo.qa.testcases.Webtable_DatadrivenTest">
         <methods>
           <include name="setUp"/>
-          <include name="verifyBookStoreLinkTest"/>
+          <include name="clickOnAddData"/>
         </methods>
-      </class> <!-- com.demo.qa.testcases.ProfilePagetest -->
+      </class> <!-- com.demo.qa.testcases.Webtable_DatadrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

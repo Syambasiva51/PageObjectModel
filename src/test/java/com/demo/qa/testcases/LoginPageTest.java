@@ -8,10 +8,12 @@ import org.testng.annotations.Test;
 import com.demo.qa.base.TestBase;
 import com.demo.qa.pages.LoginPage;
 import com.demo.qa.pages.ProfilePage;
+import com.demo.qa.util.TestUtil;
 
 public class LoginPageTest extends TestBase {
 	LoginPage loginPage;
 	ProfilePage profile;
+	TestUtil testUtil;
 	
 	public LoginPageTest(){
 		super();
@@ -20,6 +22,7 @@ public class LoginPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp(){
 		initialization();
+		testUtil = new TestUtil();
 	  loginPage = new LoginPage();	
 	}
 	

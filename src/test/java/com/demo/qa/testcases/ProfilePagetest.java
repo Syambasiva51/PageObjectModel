@@ -1,5 +1,7 @@
 package com.demo.qa.testcases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,26 +13,27 @@ import com.demo.qa.pages.LoginPage;
 import com.demo.qa.pages.ProfilePage;
 import com.demo.qa.util.TestUtil;
 
-public class ProfilePagetest extends TestBase{
+public class ProfilePageTest extends TestBase{
 	
 	LoginPage loginPage;
 	ProfilePage profilepage;
 	BookStore clickOnBookStore;
 	TestUtil testUtil;
 	
-	public ProfilePagetest(){
+	public ProfilePageTest(){
 		super();
 	}
 	
 	@BeforeMethod
 	public void setUp(){
 		initialization();
-	 loginPage = new LoginPage();	
+
+	 loginPage = new LoginPage();
 	 profilepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@Test(priority=1)
-	public void verifyHomePageTitleTest(){
+	public void verifyprofileTitleTest(){
 		String profilePageTitle = profilepage.verifyProfilePageTitle();
 		Assert.assertEquals(profilePageTitle, "ToolsQA","Home page title not matched");
 	}
@@ -43,8 +46,11 @@ public class ProfilePagetest extends TestBase{
 	@Test(priority=3)
 	public void verifyBookStoreLinkTest(){
 		clickOnBookStore = profilepage.clickOnBookStore();
+		
 	}
 	
-	
-	
+	@AfterMethod
+	public void tearDown(){
+		driver.quit();
+	}
 }
