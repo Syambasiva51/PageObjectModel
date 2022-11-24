@@ -22,6 +22,7 @@ public class LoginPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp(){
 		initialization();
+	 driver.get("https://demoqa.com/login");
 		testUtil = new TestUtil();
 	  loginPage = new LoginPage();	
 	}

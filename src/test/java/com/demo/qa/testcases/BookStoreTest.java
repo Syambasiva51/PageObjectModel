@@ -24,6 +24,7 @@ public class BookStoreTest extends TestBase{
 	@BeforeMethod
 	public void setUp(){
 		initialization();
+	driver.get("https://demoqa.com/login");
 	  loginPage = new LoginPage();	
 	  profile = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	  clickOnBookStore = profile.clickOnBookStore();

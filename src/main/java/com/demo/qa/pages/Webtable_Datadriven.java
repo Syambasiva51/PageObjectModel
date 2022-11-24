@@ -43,28 +43,28 @@ public class Webtable_Datadriven extends TestBase {
 		addData.click();
 	}
 	
-	public void EnterFirstname(){
-		Firstname.sendKeys("test1");
+	public void EnterFirstname(String firstname){
+		Firstname.sendKeys(firstname);
 	}
 	
-	public void EnterLastname(){
-		Lastname.sendKeys("test1");
+	public void EnterLastname(String lastname){
+		Lastname.sendKeys(lastname);
 	}
 	
-	public void EnterUserEmail(){
-		UserEmail.sendKeys("test1");
+	public void EnterUserEmail(String Email){
+		UserEmail.sendKeys(Email);
 	}
 	
-	public void EnterAge(){
-		Age.sendKeys("test1");
+	public void EnterAge(String age1){
+		Age.sendKeys(age1);
 	}
 	
-	public void EnterSalary(){
-		Salary.sendKeys("test1");
+	public void EnterSalary(String Salary1){
+		Salary.sendKeys(Salary1);
 	}
 	
-	public void EnterDepartment(){
-		Department.sendKeys("test1");
+	public void EnterDepartment(String department){
+		Department.sendKeys(department);
 	}
 	
 	public void clickSubmit(){
