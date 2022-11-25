@@ -1,3 +1,8 @@
+/*
+ * 
+ * syamba Author
+ */
+
 package com.demo.qa.testcases;
 
 import java.util.concurrent.TimeUnit;
@@ -28,6 +33,7 @@ public class LoginPageTest extends TestBase {
 	 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	  loginPage = new LoginPage();	
 	}
+	
 	
 	@Test(priority=1)
 	public void loginPageTitleTest(){

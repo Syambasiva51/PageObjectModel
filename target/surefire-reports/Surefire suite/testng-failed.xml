@@ -3,13 +3,19 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test name="Surefire test(failed)">
     <classes>
+      <class name="com.demo.qa.testcases.Webtable_DatadrivenTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="clickOnAddData"/>
+        </methods>
+      </class> <!-- com.demo.qa.testcases.Webtable_DatadrivenTest -->
       <class name="com.demo.qa.testcases.BookStoreTest">
         <methods>
           <include name="clickonPublisher"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="clickonAuthor"/>
-          <include name="validateBookStorePageTitle"/>
         </methods>
       </class> <!-- com.demo.qa.testcases.BookStoreTest -->
       <class name="com.demo.qa.testcases.ProfilePageTest">
@@ -23,6 +29,7 @@
       </class> <!-- com.demo.qa.testcases.ProfilePageTest -->
       <class name="com.demo.qa.testcases.LoginPageTest">
         <methods>
+          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
