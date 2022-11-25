@@ -6,6 +6,15 @@
   </listeners>
   <test name="Demo QA App Test Cases(failed)">
     <classes>
+      <class name="com.demo.qa.testcases.BookStoreTest">
+        <methods>
+          <include name="clickonPublisher"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickonAuthor"/>
+          <include name="validateBookStorePageTitle"/>
+        </methods>
+      </class> <!-- com.demo.qa.testcases.BookStoreTest -->
       <class name="com.demo.qa.testcases.LoginPageTest">
         <methods>
           <include name="loginPageTitleTest"/>
@@ -23,7 +32,9 @@
       </class> <!-- com.demo.qa.testcases.Webtable_DatadrivenTest -->
       <class name="com.demo.qa.testcases.ProfilePageTest">
         <methods>
+          <include name="verifyprofileTitleTest"/>
           <include name="setUp"/>
+          <include name="verifyUserNameTest"/>
           <include name="tearDown"/>
           <include name="verifyBookStoreLinkTest"/>
         </methods>

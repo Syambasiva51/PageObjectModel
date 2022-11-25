@@ -9,7 +9,7 @@
 	<test name="Demo QA App Test Cases">
 		<classes>
 			<class name="com.demo.qa.testcases.LoginPageTest"></class>
-			
+			<class name="com.demo.qa.testcases.ProfilePageTest"></class>
 			<class name="com.demo.qa.testcases.BookStoreTest"></class>
 			<class name="com.demo.qa.testcases.Webtable_DatadrivenTest"></class>
 		</classes>
