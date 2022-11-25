@@ -1,0 +1,4 @@
+com\demo\qa\testcases\LoginPageTest.class
+com\demo\qa\testcases\BookStoreTest.class
+com\demo\qa\testcases\ProfilePageTest.class
+com\demo\qa\testcases\Webtable_DatadrivenTest.class

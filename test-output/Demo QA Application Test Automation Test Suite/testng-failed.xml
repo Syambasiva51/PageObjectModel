@@ -6,6 +6,14 @@
   </listeners>
   <test name="Demo QA App Test Cases(failed)">
     <classes>
+      <class name="com.demo.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demo.qa.testcases.LoginPageTest -->
       <class name="com.demo.qa.testcases.Webtable_DatadrivenTest">
         <methods>
           <include name="tearDown"/>
@@ -13,13 +21,6 @@
           <include name="clickOnAddData"/>
         </methods>
       </class> <!-- com.demo.qa.testcases.Webtable_DatadrivenTest -->
-      <class name="com.demo.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.demo.qa.testcases.LoginPageTest -->
       <class name="com.demo.qa.testcases.ProfilePageTest">
         <methods>
           <include name="setUp"/>

@@ -23,7 +23,7 @@ public class Webtable_DatadrivenTest extends TestBase{
 	public void setUp() {
 		initialization();
 	driver.get("https://demoqa.com/webtables");
-	//driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+	 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	 Webtable = new Webtable_Datadriven();	
 	}
 	

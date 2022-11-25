@@ -27,7 +27,8 @@ public class ProfilePageTest extends TestBase{
 	@BeforeMethod
 	public void setUp(){
 		initialization();
-	driver.get("https://demoqa.com/login");
+	 driver.get("https://demoqa.com/login");
+	 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	 loginPage = new LoginPage();
 	 profilepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}

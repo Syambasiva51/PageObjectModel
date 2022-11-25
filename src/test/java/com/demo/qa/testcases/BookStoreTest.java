@@ -1,5 +1,7 @@
 package com.demo.qa.testcases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,6 +27,7 @@ public class BookStoreTest extends TestBase{
 	public void setUp(){
 		initialization();
 	driver.get("https://demoqa.com/login");
+	 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	  loginPage = new LoginPage();	
 	  profile = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	  clickOnBookStore = profile.clickOnBookStore();
