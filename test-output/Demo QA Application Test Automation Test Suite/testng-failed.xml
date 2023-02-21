@@ -17,22 +17,13 @@
       </class> <!-- com.demo.qa.testcases.BookStoreTest -->
       <class name="com.demo.qa.testcases.LoginPageTest">
         <methods>
-          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.demo.qa.testcases.LoginPageTest -->
-      <class name="com.demo.qa.testcases.Webtable_DatadrivenTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="clickOnAddData"/>
-        </methods>
-      </class> <!-- com.demo.qa.testcases.Webtable_DatadrivenTest -->
       <class name="com.demo.qa.testcases.ProfilePageTest">
         <methods>
-          <include name="verifyprofileTitleTest"/>
           <include name="setUp"/>
           <include name="verifyUserNameTest"/>
           <include name="tearDown"/>

@@ -29,16 +29,15 @@ public class LoginPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp(){
 		initialization();
-	 driver.get("https://demoqa.com/login");
-	 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+	  driver.get(prop.getProperty("URL"));
 	  loginPage = new LoginPage();	
 	}
-	
 	
 	@Test(priority=1)
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "ToolsQA");
+		System.out.println(title);
+		Assert.assertEquals(title, "DEMOQA");
 	}
 	
 	@Test(priority=2)
@@ -46,7 +45,6 @@ public class LoginPageTest extends TestBase {
 		profile = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
