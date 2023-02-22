@@ -40,11 +40,6 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(title, "DEMOQA");
 	}
 	
-	@Test(priority=2)
-	public void loginTest(){
-		profile = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
-	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();

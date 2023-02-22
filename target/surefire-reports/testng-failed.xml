@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [com.demo.qa.testcases.LoginPageTest]" verbose="0">
-  <test name="Command line test(failed)">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
     <classes>
       <class name="com.demo.qa.testcases.LoginPageTest">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- com.demo.qa.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [com.demo.qa.testcases.LoginPageTest] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
