@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-21T17:26:13Z" name="Default suite" finished-at="2023-02-21T17:26:39Z" duration-ms="26454">
+  <suite started-at="2023-03-23T07:36:43Z" name="Default suite" finished-at="2023-03-23T07:37:19Z" duration-ms="35983">
     <groups>
     </groups>
-    <test started-at="2023-02-21T17:26:13Z" name="Default test" finished-at="2023-02-21T17:26:39Z" duration-ms="26454">
-      <class name="com.demo.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demo.qa.testcases.LoginPageTest@f58853c]" started-at="2023-02-21T22:56:13Z" name="setUp" finished-at="2023-02-21T22:56:25Z" duration-ms="12492" status="PASS">
+    <test started-at="2023-03-23T07:36:43Z" name="Default test" finished-at="2023-03-23T07:37:19Z" duration-ms="35983">
+      <class name="com.mareana.mi.testcases.GenelogyPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mareana.mi.testcases.GenelogyPageTest@5c86dbc5]" started-at="2023-03-23T13:06:43Z" name="setUp" finished-at="2023-03-23T13:06:50Z" duration-ms="6635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.demo.qa.testcases.LoginPageTest@f58853c]" started-at="2023-02-21T22:56:25Z" name="loginPageTitleTest" finished-at="2023-02-21T22:56:25Z" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.qa.testcases.LoginPageTest@f58853c]" started-at="2023-02-21T22:56:25Z" name="tearDown" finished-at="2023-02-21T22:56:25Z" duration-ms="264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demo.qa.testcases.LoginPageTest@f58853c]" started-at="2023-02-21T22:56:25Z" name="setUp" finished-at="2023-02-21T22:56:37Z" duration-ms="11291" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:2, instance:com.demo.qa.testcases.LoginPageTest@f58853c]" started-at="2023-02-21T22:56:37Z" name="loginTest" finished-at="2023-02-21T22:56:39Z" duration-ms="1971" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="GenelogyPageTest()[pri:1, instance:com.mareana.mi.testcases.GenelogyPageTest@5c86dbc5]" started-at="2023-03-23T13:06:50Z" name="GenelogyPageTest" finished-at="2023-03-23T13:07:19Z" duration-ms="29324" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[element click intercepted: Element <button id="login" type="button" class="btn btn-primary">...</button> is not clickable at point (768, 528). Other element would receive the click: <iframe frameborder="0" src="https://0b59114036b10f97f962f4f1f672cb42.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
-  (Session info: chrome=110.0.5481.104)
+              <![CDATA[element not interactable
+  (Session info: chrome=111.0.5563.65)
 Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [461a4f8faae5f159aee1922de263a5df, clickElement {id=cb4d8813-d573-43c3-8bdf-a3db099afb7e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SAMBAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61231/devtoo..., se:cdpVersion: 110.0.5481.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (461a4f8faae5f159aee1922de263a5df)] -> xpath: //button[@id='login']]
-Session ID: 461a4f8faae5f159aee1922de263a5df]]>
+Command: [e6e20028749052a200d46fb7ff651f6f, clickElement {id=74f21821-0945-414c-8ad8-1aa9d30d9549}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\SAMBAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58626}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58626/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e6e20028749052a200d46fb7ff651f6f)] -> xpath: (//*[local-name()='svg' and @id='treeviewidbackward']/*/*/*)[1]]
+Session ID: e6e20028749052a200d46fb7ff651f6f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="login" type="button" class="btn btn-primary">...</button> is not clickable at point (768, 528). Other element would receive the click: <iframe frameborder="0" src="https://0b59114036b10f97f962f4f1f672cb42.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
-  (Session info: chrome=110.0.5481.104)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.65)
 Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [461a4f8faae5f159aee1922de263a5df, clickElement {id=cb4d8813-d573-43c3-8bdf-a3db099afb7e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SAMBAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61231/devtoo..., se:cdpVersion: 110.0.5481.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (461a4f8faae5f159aee1922de263a5df)] -> xpath: //button[@id='login']]
-Session ID: 461a4f8faae5f159aee1922de263a5df
+Command: [e6e20028749052a200d46fb7ff651f6f, clickElement {id=74f21821-0945-414c-8ad8-1aa9d30d9549}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\SAMBAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58626}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58626/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e6e20028749052a200d46fb7ff651f6f)] -> xpath: (//*[local-name()='svg' and @id='treeviewidbackward']/*/*/*)[1]]
+Session ID: e6e20028749052a200d46fb7ff651f6f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -73,8 +61,8 @@ Session ID: 461a4f8faae5f159aee1922de263a5df
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.demo.qa.pages.LoginPage.login(LoginPage.java:35)
-	at com.demo.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:45)
+	at com.mareana.mi.pages.GenelogyPage.SelectParameters(GenelogyPage.java:98)
+	at com.mareana.mi.testcases.GenelogyPageTest.GenelogyPageTest(GenelogyPageTest.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,15 +90,15 @@ Session ID: 461a4f8faae5f159aee1922de263a5df
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.qa.testcases.LoginPageTest@f58853c]" started-at="2023-02-21T22:56:39Z" name="tearDown" finished-at="2023-02-21T22:56:39Z" duration-ms="387" status="PASS">
+        </test-method> <!-- GenelogyPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mareana.mi.testcases.GenelogyPageTest@5c86dbc5]" started-at="2023-03-23T13:07:19Z" name="tearDown" finished-at="2023-03-23T13:07:19Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demo.qa.testcases.LoginPageTest -->
+      </class> <!-- com.mareana.mi.testcases.GenelogyPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
